@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/estilo.css"/>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="js/jquery-1.12.3.js"></script>
+        <script src="js/funcoes.js"></script>
+        <script src="js/valida.js"></script>
+        <script src="js/jquery.validate.js"></script>
+        <title>Didática</title>
+    </head>
+    <body>
+        <div id="interface">
+            <header id="cabecalho">
+                <h1>Vamos ver se você é bom em reconhecer objetos</h1>
+            </header>
+            <form action="validar.html" method="post" name="acesso" onsubmit="return is_checked()" id="acesso" role="form" class="left-aligned" >
+                <header id="cabecalho-formulario">
+                    <h1>Clique na imagem que não pertence a cada grupo</h1>
+                </header>
+            </br></br></br>
+                <h3>Grupo1</h3>
+                <table id="tabela">
+                    <tr>
+                        <td id="coluna">
+                            <figure class="foto-legenda">
+                                <img src="imagens\atividade1\arroz.png"/>
+                                <figcaption>
+                                    <p>Arroz</p>
+                                </figcaption>
+                            </figure>
+                            <input type="radio" name="grupo1" value="yes" id="var1">Arroz
+                        </td>
+                        <td>
+                            <figure class="foto-legenda">
+                                <img src="imagens\atividade1\sabonete.png"/>
+                                <figcaption>
+                                    <p>Sabonete</p>
+                                </figcaption>
+                            </figure>
+                            <input type="radio" name="grupo1" value="yes" id="var2">Sabonete
+                        </td>
+                        <td>
+                            <figure class="foto-legenda">
+                                <img src="imagens\atividade1\feijao.png"/>
+                                <figcaption>
+                                    <p>Feijão</p>
+                                </figcaption>
+                            </figure>
+                            <input type="radio" name="grupo1" value="yes" id="var3">Feijão
+                        </td>
+                        <td>
+                            <figure class="foto-legenda">
+                                <img src="imagens\atividade1\batata.png"/>
+                                <figcaption>
+                                    <p>Batata</p>
+                                </figcaption>
+                            </figure>
+                            <input type="radio" name="grupo1" value="yes" id="var4">Batata
+                        </td>
+                    </tr>
+                </table>
+            </br></br></br>
+            <h3>Grupo2</h3>
+                <table id="tabela">
+                    <tr>
+                        <td id="coluna">
+                            <figure class="foto-legenda">
+                                <img src="imagens\atividade1\bicicleta.png"/>
+                                <figcaption>
+                                    <p>Bicicleta</p>
+                                </figcaption>
+                            </figure>
+                            <input type="radio" name="grupo2" value="yes" id="var5">Bicicleta
+                        </td>
+                        <td>
+                            <figure class="foto-legenda">
+                                <img src="imagens\atividade1\carro.png"/>
+                                <figcaption>
+                                    <p>Carro</p>
+                                </figcaption>
+                            </figure>
+                            <input type="radio" name="grupo2" value="yes" id="var6">Carro
+                        </td>
+                        <td>
+                            <figure class="foto-legenda">
+                                <img src="imagens\atividade1\algodaoDoce.png"/>
+                                <figcaption>
+                                    <p>Algodão doce</p>
+                                </figcaption>
+                            </figure>
+                            <input type="radio" name="grupo2" value="yes" id="var7">Algodão doce
+                        </td>
+                        <td>
+                            <figure class="foto-legenda">
+                                <img src="imagens\atividade1\moto.png"/>
+                                <figcaption>
+                                    <p>Moto</p>
+                                </figcaption>
+                            </figure>
+                            <input type="radio" name="grupo2" value="yes" id="var8">Moto
+                        </td>
+                    </tr>
+                </table>
+            </br></br></br>
+            <h3>Grupo3</h3>
+                <table id="tabela">
+                    <tr>
+                        <td id="coluna">
+                            <figure class="foto-legenda">
+                                <img src="imagens\atividade1\oculos.png"/>
+                                <figcaption>
+                                    <p>Óculos</p>
+                                </figcaption>
+                            </figure>
+                            <input type="radio" name="grupo3" value="yes" id="var9">Óculos
+                        </td>
+                        <td>
+                            <figure class="foto-legenda">
+                                <img src="imagens\atividade1\cadeiraDePraia.png"/>
+                                <figcaption>
+                                    <p>Cadeira de praia</p>
+                                </figcaption>
+                            </figure>
+                            <input type="radio" name="grupo3" value="yes" id="var10">Cadeira de praia
+                        </td>
+                        <td>
+                            <figure class="foto-legenda">
+                                <img src="imagens\atividade1\sombrinha.png"/>
+                                <figcaption>
+                                    <p>Sombrinha</p>
+                                </figcaption>
+                            </figure>
+                            <input type="radio" name="grupo3" value="yes" id="var11">Sombrinha
+                        </td>
+                        <td>
+                            <figure class="foto-legenda">
+                                <img src="imagens\atividade1\maquinaDeLavar.png"/>
+                                <figcaption>
+                                    <p>Máquina de lavar</p>
+                                </figcaption>
+                            </figure>
+                            <input type="radio" name="grupo3" value="yes" id="var12">Máquina de lavar
+                        </td>
+                    </tr>
+                </table>
+            </br></br></br>
+                <table id="tabela">
+                    <tr>
+                    <h3>Grupo4</h3>
+                        <td id="coluna">
+                            <figure class="foto-legenda">
+                                <img src="imagens\atividade1\bola.png"/>
+                                <figcaption>
+                                    <p>Bola</p>
+                                </figcaption>
+                            </figure>
+                            <input type="radio" name="grupo4" value="yes" id="var13">Bola
+                        </td>
+                        <td>
+                            <figure class="foto-legenda">
+                                <img src="imagens\atividade1\skate.png"/>
+                                <figcaption>
+                                    <p>Skate</p>
+                                </figcaption>
+                            </figure>
+                            <input type="radio" name="grupo4" value="yes" id="var14">Skate
+                        </td>
+                        <td>
+                            <figure class="foto-legenda">
+                                <img src="imagens\atividade1\patins.png"/>
+                                <figcaption>
+                                    <p>Patins</p>
+                                </figcaption>
+                            </figure>
+                            <input type="radio" name="grupo4" value="yes" id="var15">Patins
+                        </td>
+                        <td>
+                            <figure class="foto-legenda">
+                                <img src="imagens\atividade1\chaveDeFenda.png"/>
+                                <figcaption>
+                                    <p>Chave de fenda</p>
+                                </figcaption>
+                            </figure>
+                            <input type="radio" name="grupo4" value="yes" id="var16">Chave de fenda
+                        </td>
+                    </tr>
+                </table>
+
+                </br></br></br>
+                </br></br></br>
+                <header id="cabecalho-formulario">
+                    <h1>Relacione o nome com a figura geométrica</h1>
+                </header>
+                </br></br></br>
+                <table id="tabelaspec">
+                    <tr>
+                        <td rowspan="5" class="ce">
+                            <img src="imagens\atividade1\triangulo.png"/>
+                    </tr>
+                    <tr>
+                        <td class="cd"><input type="radio" name="grupo5" value="yes" id="var17">Triângulo</td>
+                    </tr>
+
+                    <tr>
+                        <td class="cd"><input type="radio" name="grupo5" value="yes" id="var18">Quadrado</td>
+                    </tr>
+
+                    <tr>
+                        <td class="cd"><input type="radio" name="grupo5" value="yes" id="var19">Círculo</td>
+                    </tr>
+
+                    <tr>
+                        <td class="cd"><input type="radio" name="grupo5" value="yes" id="var20">Retângulo</td>
+                    </tr>
+                </table>
+                </br></br></br>
+                <table id="tabelaspec">
+                    <tr>
+                        <td rowspan="5" class="ce">
+                            <img src="imagens\atividade1\quadrado.png"/>
+                    </tr>
+                    <tr>
+                        <td class="cd"><input type="radio" name="grupo6" value="yes" id="var21">Triângulo</td>
+                    </tr>
+
+                    <tr>
+                        <td class="cd"><input type="radio" name="grupo6" value="yes" id="var22">Quadrado</td>
+                    </tr>
+
+                    <tr>
+                        <td class="cd"><input type="radio" name="grupo6" value="yes" id="var23">Círculo</td>
+                    </tr>
+
+                    <tr>
+                        <td class="cd"><input type="radio" name="grupo6" value="yes" id="var24">Retângulo</td>
+                    </tr>
+                </table>
+                </br></br></br>
+                <table id="tabelaspec">
+                    <tr>
+                        <td rowspan="5" class="ce">
+                            <img src="imagens\atividade1\circulo.png"/>
+                    </tr>
+                    <tr>
+                        <td class="cd"><input type="radio" name="grupo7" value="yes" id="var25">Triângulo</td>
+                    </tr>
+
+                    <tr>
+                        <td class="cd"><input type="radio" name="grupo7" value="yes" id="var26">Quadrado</td>
+                    </tr>
+
+                    <tr>
+                        <td class="cd"><input type="radio" name="grupo7" value="yes" id="var27">Círculo</td>
+                    </tr>
+
+                    <tr>
+                        <td class="cd"><input type="radio" name="grupo7" value="yes" id="var28">Retângulo</td>
+                    </tr>
+                </table>
+            </br></br></br>
+            <table id="tabelaspec">
+                <tr>
+                    <td rowspan="5" class="ce">
+                        <img src="imagens\atividade1\retangulo.png"/>
+                </tr>
+                <tr>
+                    <td class="cd"><input type="radio" name="grupo8" value="yes" id="var29">Triângulo</td>
+                </tr>
+
+                <tr>
+                    <td class="cd"><input type="radio" name="grupo8" value="yes" id="var30">Quadrado</td>
+                </tr>
+
+                <tr>
+                    <td class="cd"><input type="radio" name="grupo8" value="yes" id="var31">Círculo</td>
+                </tr>
+
+                <tr>
+                    <td class="cd"><input type="radio" name="grupo8" value="yes" id="var32">Retângulo</td>
+                </tr>
+            </table>
+            </br></br></br></br></br></br></br></br></br>
+            <button type="button" id="validar">Terminar</button>
+            <p id="resultado">Resultado</p>
+            <!--input id="submeter" type="submit" value="Terminar" /-->
+            </br></br></br></br></br></br></br></br></br>
+
+            </form>
+            <footer id="rodape">
+                <p>Copyright 2016 - by Leonardo de Souza<br/>
+                <a href="https://www.facebook.com/leonardo.souza.94695" target="_blank">Facebook</a>
+            </footer>
+        </div>
+    </body>
+</html>

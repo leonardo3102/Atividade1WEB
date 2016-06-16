@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="imagens/favicon.ico" >
+        <link rel="stylesheet" href="css/estilo.css"/>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="js/jquery-1.12.3.js"></script>
+        <script src="js/funcoes.js"></script>
+        <script src="js/valida.js"></script>
+        <script src="js/jquery.validate.js"></script>
+        <title>Didática</title>
+    </head>
+    <body>
+        <div id="interface">
+            <header id="cabecalho">
+                <h1>Vamos ver se você é bom em reconhecer objetos</h1>
+            </header>
+            <form action="validar.html" method="post" name="acesso" onsubmit="return is_checked()" id="acesso" role="form" class="left-aligned" >
+                <header id="cabecalho-formulario">
+                    <h1>Clique na imagem que não pertence a cada grupo</h1>
+                </header>
+            </br></br></br>
+            <div class="grupo">
+                <h3>Grupo1</h3>
+                <ul class="imagem">
+                  <li class="imagem-lista var1">
+                    <input name="grupo1" type="radio" value="yes" id="var1">
+                    <label for="var1">Arroz</label>
+                  </li>
+                  <li class="imagem-lista var2">
+                    <input name="grupo1" type="radio" value="yes" id="var2">
+                    <label for="var2">Sabonete</label>
+                  </li>
+                  <li class="imagem-lista var3">
+                    <input name="grupo1" type="radio" value="yes" id="var3">
+                    <label for="var3">Feijão</label>
+                  </li>
+                  <li class="imagem-lista var4">
+                    <input name="grupo1" type="radio" value="yes" id="var4">
+                    <label for="var4">Batata</label>
+                  </li>
+                </ul>
+            </div>
+            </br></br></br>
+            <div class="grupo">
+            <h3>Grupo2</h3></br>
+                <ul class="imagem">
+                  <li class="imagem-lista var5">
+                    <input name="grupo2" type="radio" value="yes" id="var5">
+                    <label for="var5">Bicicleta</label>
+                  </li>
+                  <li class="imagem-lista var6">
+                    <input name="grupo2" type="radio" value="yes" id="var6">
+                    <label for="var6">Carro</label>
+                  </li>
+                  <li class="imagem-lista var7">
+                    <input name="grupo2" type="radio" value="yes" id="var7">
+                    <label for="var7">Algodão Doce</label>
+                  </li>
+                  <li class="imagem-lista var8">
+                    <input name="grupo2" type="radio" value="yes" id="var8">
+                    <label for="var8">Moto</label>
+                  </li>
+                </ul>
+            </div>
+            </br></br></br>
+            <div class="grupo">
+            <h3>Grupo3</h3></br>
+                <ul class="imagem">
+                  <li class="imagem-lista var9">
+                    <input name="grupo3" type="radio" value="yes" id="var9">
+                    <label for="var9">Óculos</label>
+                  </li>
+                  <li class="imagem-lista var10">
+                    <input name="grupo3" type="radio" value="yes" id="var10">
+                    <label for="var10">Cadeira de Praia</label>
+                  </li>
+                  <li class="imagem-lista var11">
+                    <input name="grupo3" type="radio" value="yes" id="var11">
+                    <label for="var11">Sombrinha</label>
+                  </li>
+                  <li class="imagem-lista var12">
+                    <input name="grupo3" type="radio" value="yes" id="var12">
+                    <label for="var12">Máquina de Lavar</label>
+                  </li>
+                </ul>
+            </div>
+            </br></br></br>
+            <div class="grupo">
+            <h3>Grupo4</h3></br>
+                <ul class="imagem">
+                  <li class="imagem-lista var13">
+                    <input name="grupo4" type="radio" value="yes" id="var13">
+                    <label for="var9">Bola</label>
+                  </li>
+                  <li class="imagem-lista var14">
+                    <input name="grupo4" type="radio" value="yes" id="var14">
+                    <label for="var14">Skate</label>
+                  </li>
+                  <li class="imagem-lista var15">
+                    <input name="grupo4" type="radio" value="yes" id="var15">
+                    <label for="var15">Patins</label>
+                  </li>
+                  <li class="imagem-lista var16">
+                    <input name="grupo4" type="radio" value="yes" id="var16">
+                    <label for="var16">Chave de fenda</label>
+                  </li>
+                </ul>
+                </div>
+                </br></br></br>
+                </br></br></br>
+                <header id="cabecalho-formulario">
+                    <h1>Relacione o nome com a figura geométrica</h1>
+                </header>
+                </br></br></br>
+                <table id="tabelaspec">
+                    <tr>
+                        <td rowspan="5" class="ce">
+                            <img src="imagens\atividade1\triangulo.png"/>
+                    </tr>
+                    <tr>
+                        <td class="cd"><input type="radio" name="grupo5" value="yes" id="var17">Triângulo</td>
+                    </tr>
+
+                    <tr>
+                        <td class="cd"><input type="radio" name="grupo5" value="yes" id="var18">Quadrado</td>
+                    </tr>
+
+                    <tr>
+                        <td class="cd"><input type="radio" name="grupo5" value="yes" id="var19">Círculo</td>
+                    </tr>
+
+                    <tr>
+                        <td class="cd"><input type="radio" name="grupo5" value="yes" id="var20">Retângulo</td>
+                    </tr>
+                </table>
+                </br></br></br>
+                <table id="tabelaspec">
+                    <tr>
+                        <td rowspan="5" class="ce">
+                            <img src="imagens\atividade1\quadrado.png"/>
+                    </tr>
+                    <tr>
+                        <td class="cd"><input type="radio" name="grupo6" value="yes" id="var21">Triângulo</td>
+                    </tr>
+
+                    <tr>
+                        <td class="cd"><input type="radio" name="grupo6" value="yes" id="var22">Quadrado</td>
+                    </tr>
+
+                    <tr>
+                        <td class="cd"><input type="radio" name="grupo6" value="yes" id="var23">Círculo</td>
+                    </tr>
+
+                    <tr>
+                        <td class="cd"><input type="radio" name="grupo6" value="yes" id="var24">Retângulo</td>
+                    </tr>
+                </table>
+                </br></br></br>
+                <table id="tabelaspec">
+                    <tr>
+                        <td rowspan="5" class="ce">
+                            <img src="imagens\atividade1\circulo.png"/>
+                    </tr>
+                    <tr>
+                        <td class="cd"><input type="radio" name="grupo7" value="yes" id="var25">Triângulo</td>
+                    </tr>
+
+                    <tr>
+                        <td class="cd"><input type="radio" name="grupo7" value="yes" id="var26">Quadrado</td>
+                    </tr>
+
+                    <tr>
+                        <td class="cd"><input type="radio" name="grupo7" value="yes" id="var27">Círculo</td>
+                    </tr>
+
+                    <tr>
+                        <td class="cd"><input type="radio" name="grupo7" value="yes" id="var28">Retângulo</td>
+                    </tr>
+                </table>
+            </br></br></br>
+            <table id="tabelaspec">
+                <tr>
+                    <td rowspan="5" class="ce">
+                        <img src="imagens\atividade1\retangulo.png"/>
+                </tr>
+                <tr>
+                    <td class="cd"><input type="radio" name="grupo8" value="yes" id="var29">Triângulo</td>
+                </tr>
+
+                <tr>
+                    <td class="cd"><input type="radio" name="grupo8" value="yes" id="var30">Quadrado</td>
+                </tr>
+
+                <tr>
+                    <td class="cd"><input type="radio" name="grupo8" value="yes" id="var31">Círculo</td>
+                </tr>
+
+                <tr>
+                    <td class="cd"><input type="radio" name="grupo8" value="yes" id="var32">Retângulo</td>
+                </tr>
+            </table>
+            </br></br></br></br></br></br></br></br></br>
+            <button type="button" id="validar">Terminar</button>
+            <p id="resultado">Resultado</p>
+            <!--input id="submeter" type="submit" value="Terminar" /-->
+            </br></br></br></br></br></br></br></br></br>
+
+            </form>
+            <footer id="rodape">
+                <p>Copyright 2016 - by Leonardo de Souza<br/>
+                <a href="https://www.facebook.com/leonardo.souza.94695" target="_blank">Facebook</a>
+            </footer>
+        </div>
+    </body>
+</html>

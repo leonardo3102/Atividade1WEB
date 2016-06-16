@@ -1,0 +1,279 @@
+@charset "UTF-8";
+
+body{
+    background-image: url("../imagens/fundo3.png");
+    background-color: #efefef;
+    color: rgba(0, 0, 0, 1);
+}
+
+a#opcao{
+    display: block;
+    margin: -20px auto 0px auto;
+    padding: 10px 10px 10px 10px;
+    font-size: 20pt;
+    text-align: center;
+    text-align: middle;
+    border-radius: 30pt;
+    height: 60px;
+    width: 200px;
+    border: 1px #606060 solid;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0,0.5);
+}
+
+a#opcao:hover{
+    font-weight: bold;
+    background-color: #efefef;
+}
+
+div#interface{
+    width: 1000px;
+    background: #efffff;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0,0.5);
+    padding: 10px 10px 10px 10px;
+}
+
+header#cabecalho{
+    height: 230px;
+    text-align: center;
+    background: url("../imagens/header.png");
+    box-shadow: 0px 0px 10px rgba(0, 0, 0,0.5);
+}
+
+header#cabecalho h1{
+    font-size: 30pt;
+    color: green;
+    text-shadow: 1px 1px 10px rgba(255,255,255,.5);
+    padding: 30px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho-formulario{
+    margin-top: 15px;
+    border: 1px #606060 solid;
+    background-color: #A4FFA2;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0,0.5);
+    height: auto;
+    text-align: center;
+}
+
+header#cabecalho-formulario h1{
+    font-size: 30pt;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0,0.5);
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+form#acesso{
+    text-align: center;
+}
+
+table#tabela{
+    text-align: center;
+    display: block;
+    color: #000000;
+    margin-left: 55px;
+}
+
+table#tabelaspec {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelaspec td{
+    padding: 10px;
+    text-align: left;
+}
+
+table#tabelaspec td.ce{
+    vertical-align: top;
+    font-weight: bold;
+}
+
+table#tabelaspec td.cd:hover{
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.grupo{
+    margin-bottom: 100px;
+    margin-left: 55px;
+}
+
+/*Formatação das imagens*/
+
+.imagem {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.imagem:after {
+  content: "";
+  clear: both;
+}
+
+.imagem-lista {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  float: left;
+  height: 132px;
+  position: relative;
+  width: 200px;
+}
+
+.imagem-lista + .imagem-lista {
+  margin-left: 25px;
+}
+
+.imagem-lista label {
+  background: #fff no-repeat center center;
+  bottom: 1px;
+  cursor: pointer;
+  display: block;
+  font-size: 0;
+  left: 1px;
+  position: absolute;
+  right: 1px;
+  text-indent: 100%;
+  top: 1px;
+  white-space: nowrap;
+}
+
+.var1 label {
+  background-image: url(../imagens/atividade1/arroz.png);
+}
+.var2 label {
+  background-image: url(../imagens/atividade1/sabonete.png);
+}
+.var3 label {
+  background-image: url(../imagens/atividade1/feijao.png);
+}
+.var4 label {
+  background-image: url(../imagens/atividade1/batata.png);
+}
+.var5 label {
+  background-image: url(../imagens/atividade1/bicicleta.png);
+}
+.var6 label {
+  background-image: url(../imagens/atividade1/carro.png);
+}
+.var7 label {
+  background-image: url(../imagens/atividade1/algodaoDoce.png);
+}
+.var8 label {
+  background-image: url(../imagens/atividade1/moto.png);
+}
+.var9 label {
+  background-image: url(../imagens/atividade1/oculos.png);
+}
+.var10 label {
+  background-image: url(../imagens/atividade1/cadeiraDePraia.png);
+}
+.var11 label {
+  background-image: url(../imagens/atividade1/sombrinha.png);
+}
+.var12 label {
+  background-image: url(../imagens/atividade1/maquinaDeLavar.png);
+}
+.var13 label {
+  background-image: url(../imagens/atividade1/bola.png);
+}
+.var14 label {
+  background-image: url(../imagens/atividade1/skate.png);
+}
+.var15 label {
+  background-image: url(../imagens/atividade1/patins.png);
+}
+.var16 label {
+  background-image: url(../imagens/atividade1/chaveDeFenda.png);
+}
+
+.imagem input:focus + label {
+  outline: 2px dotted #21b4d0;
+}
+
+.imagem input:checked + label {
+  outline: 4px solid #21b4d0;
+}
+
+.imagem input:checked + label:after {
+  background: url(../imagens/checked.png) no-repeat;
+  bottom: -10px;
+  content: "";
+  display: inline-block;
+  height: 20px;
+  position: absolute;
+  right: -10px;
+  width: 20px;
+}
+
+
+/*Formatação de imagens com legendas*/
+figure.foto-legenda{
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+    cursor:pointer;
+}
+
+button#validar{
+    background-color: #efefef;
+    font-size: 30pt;
+    text-align: center;
+    border-radius: 50pt;
+    height: 100px;
+    width: 200px;
+}
+
+button#validar:hover{
+    font-weight: bold;
+    background-color: #00ffff;
+    box-shadow: 0px 0px 30px rgba(0, 255, 255,1);
+    border-color: #00ffff;
+}
+
+input#submeter{
+    background-color: #efefef;
+    font-size: 30pt;
+    text-align: center;
+    border-radius: 50pt;
+    height: 100px;
+    width: 200px;
+}
+
+input#submeter:hover{
+    font-weight: bold;
+    background-color: #00ffff;
+    box-shadow: 0px 0px 30px rgba(0, 255, 255,1);
+    border-color: #00ffff;
+}
+
+
+footer#rodape{
+    clear: both;
+    height: 160px;
+    border-top: 1px solid #606060;
+    background: url("../imagens/footer.png");
+}
+
+footer#rodape p{
+    text-align: center;
+}
